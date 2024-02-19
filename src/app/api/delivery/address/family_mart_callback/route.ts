@@ -7,5 +7,5 @@ export async function POST(req: NextRequest, res: NextResponse) {
   console.log(body, "<< body 🐧🐧🐧");
 
   // redirect to the frontend main page with relative path
-  return redirect("../..");
+  return redirect("https://ecpay-test-qkdvm305i-chen-hsien.vercel.app");
 }
