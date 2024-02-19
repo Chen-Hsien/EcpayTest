@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 export default function Home() {
+  // change
   const JSON_URL = "https://jsonplaceholder.typicode.com/posts";
 
   const NEXT_API_URL =
