@@ -7,7 +7,7 @@ export default function Home() {
   const JSON_URL = "https://jsonplaceholder.typicode.com/posts";
 
   const NEXT_API_URL =
-    "https://ecpay-test-qkdvm305i-chen-hsien.vercel.app/api/delivery/address/family_mart_callback";
+    "https://ecpay-test-15jdyi0gb-chen-hsien.vercel.app/api/delivery/address/family_mart_callback";
 
   const BACKEND_API_URL = "http://localhost:8000/api/post";
 
