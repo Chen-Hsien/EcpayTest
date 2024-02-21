@@ -9,6 +9,9 @@ export default function Home() {
   const NEXT_API_URL =
     "https://ecpay-test-15jdyi0gb-chen-hsien.vercel.app/api/delivery/address/family_mart_callback";
 
+  const NEXT_API_HOME_URL =
+    "https://ecpay-test-15jdyi0gb-chen-hsien.vercel.app/";
+
   const BACKEND_API_URL = "http://localhost:8000/api/post";
 
   const MEMF_DOMAIN = "https://ecmfme.map.com.tw/default.aspx";
@@ -19,6 +22,11 @@ export default function Home() {
     MEMF_DOMAIN +
     "?CvsName=ichichain.com&CvSid=0&CvsTemp=0&Exchange=true&CvsLink=" +
     NEXT_API_URL;
+
+  const mfmeHome =
+    MEMF_DOMAIN +
+    "?CvsName=ichichain.com&CvSid=0&CvsTemp=0&Exchange=true&CvsLink=" +
+    NEXT_API_HOME_URL;
 
   const mfmeJSON =
     MEMF_DOMAIN +
@@ -57,6 +65,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <button onClick={handleButtonClick}>Choose Logistics</button>
       <Link href={mfme}>全家</Link>
+      <Link href={mfmeHome}>全家導致Home</Link>
       <Link href={mfmeJSON}>全家JSON</Link>
       <Link href={eleven}>7-11</Link>
     </main>
